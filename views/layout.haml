@@ -8,17 +8,17 @@
 
     = stylesheet_link_tag "vendor/foundation.css", "application.css", "vendor/jquery.neosmart.fb.wall.css"
     = javascript_include_tag "vendor/jquery-1.9.1.min.js", "vendor/jquery.neosmart.fb.wall.js"
-    %link{href: 'http://fonts.googleapis.com/css?family=Condiment|Days+One', rel: 'stylesheet', type: 'text/css'}
+    %link{href: 'http://fonts.googleapis.com/css?family=Condiment', rel: 'stylesheet', type: 'text/css'}
 
   %body
-    #global-header.container.margin-top-20.margin-bottom-25
+    #global-header.container.margin-bottom-25
       .show-on-desktops.hide-on-mobile
         %h1.text-center.negative-margin-bottom-35
           = image_tag "/images/circle_headshot.png"
           Dan Thorp
       .show-on-mobile.hide-on-desktops
         %h1.text-center.negative-margin-bottom-35.padding-left-0
-          .block.negative-margin-bottom-10= image_tag "/images/circle_headshot.png"
+          .block.negative-margin-bottom-45.padding-left-20= image_tag "/images/circle_headshot.png"
           .block.margin-top-0 Dan T.
       %nav
         %ul

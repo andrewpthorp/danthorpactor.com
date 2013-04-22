@@ -4346,9 +4346,9 @@ body {
     font-size: 30px;
     font-size: 3rem;
     font-weight: bold;
-    color: #777777;
-    font-style: italic;
-    border-bottom: 1px solid #777777; }
+    color: #cccccc;
+    border-bottom: 1px solid #777777;
+    padding-bottom: 5px; }
   body a.facebook, body a.twitter, body a.photo-block {
     font-family: "lucida grande", sans-serif;
     font-weight: bold;
