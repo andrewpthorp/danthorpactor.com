@@ -51,13 +51,13 @@
 /*  Display
  */
 .block {
-  display: block; }
+  display: block !important; }
 
 .inline {
-  display: inline; }
+  display: inline !important; }
 
 .inline-block {
-  display: inline-block; }
+  display: inline-block !important; }
 
 .width-0 {
   width: 0%; }
@@ -4343,9 +4343,13 @@ body {
     box-sizing: border-box;
     border-top: 5px solid #555555; }
   body h1.section-header {
+    font-size: 30px;
+    font-size: 3rem;
     font-weight: bold;
+    color: #777777;
+    font-style: italic;
     border-bottom: 1px solid #777777; }
-  body a.facebook {
+  body a.facebook, body a.twitter, body a.photo-block {
     font-family: "lucida grande", sans-serif;
     font-weight: bold;
     font-size: 25px;
@@ -4355,8 +4359,17 @@ body {
     text-align: center;
     color: white;
     background: #3b5998; }
-    body a.facebook:hover {
+    body a.facebook:hover, body a.twitter:hover, body a.photo-block:hover {
       background: #263961; }
+    body a.facebook.twitter, body a.twitter.twitter, body a.photo-block.twitter {
+      font-family: Arial, sans-serif;
+      background: #00aced; }
+      body a.facebook.twitter:hover, body a.twitter.twitter:hover, body a.photo-block.twitter:hover {
+        background: #0074a1; }
+    body a.facebook.photo-block, body a.twitter.photo-block, body a.photo-block.photo-block {
+      background: #bd3c3d; }
+      body a.facebook.photo-block:hover, body a.twitter.photo-block:hover, body a.photo-block.photo-block:hover {
+        background: #832a2a; }
   body #main {
     margin: 0px auto 50px;
     max-width: 960px; }

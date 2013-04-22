@@ -11,16 +11,21 @@
     #fb-wall
 
   .six.columns
-    = link_to "facebook", "http://www.facebook.com/ActorDanThorp", class: "facebook margin-bottom-20"
+    .row.margin-bottom-20
+      .six.columns
+        = link_to "facebook", "http://www.facebook.com/ActorDanThorp", class: "facebook"
+      .six.columns
+        = link_to "twitter", "http://www.twitter.com/danthorp2012", class: "twitter"
     = image_tag "/images/headshot_cropped.png", alt: "Headshot", class: "margin-bottom-0 block"
     = image_tag "/images/foolforlove_cropped.png", alt: "Headshot", class: "margin-bottom-0 block"
     = image_tag "/images/skippy.png", alt: "Headshot", class: "margin-bottom-0 block"
+    = link_to "more photos", "/photos", class: "photo-block"
 
 
 :javascript
   $('#fb-wall').fbWall({
     id: 'ActorDanThorp',
-    accessToken:'something',
+    accessToken:'335584889886886|BiRZP46p9B9wWEv_zCrVlSVlIDg',
     showGuestEntries:false,
     showComments:false,
     max:5,

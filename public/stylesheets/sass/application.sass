@@ -19,10 +19,14 @@ body
     border-top: 5px solid #555
 
   h1.section-header
+    font-size: 30px
+    font-size: 3.0rem
     font-weight: bold
+    color: #777
+    font-style: italic
     border-bottom: 1px solid #777
 
-  a.facebook
+  a.facebook, a.twitter, a.photo-block
     font-family: 'lucida grande', sans-serif
     font-weight: bold
     font-size: 25px
@@ -34,6 +38,15 @@ body
     background: #3B5998
     &:hover
       background: darken(#3B5998, 15%)
+    &.twitter
+      font-family: Arial, sans-serif
+      background: #00ACED
+      &:hover
+        background: darken(#00ACED, 15%)
+    &.photo-block
+      background: #BD3C3D
+      &:hover
+        background: darken(#BD3C3D, 15%)
 
   #main
     margin: 0px auto 50px
