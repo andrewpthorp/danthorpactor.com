@@ -4,10 +4,26 @@
     %meta{:charset => 'utf-8'}
     %meta{"http-equiv" => "X-UI-Compatible", :content => 'IE=edge,chrome=1'}
     %meta{:name => 'viewport', :content => 'width=device-width,initial-scale=1'}
-    %title Daniel Thorp
+    %title Daniel Thorp | Actor
 
-    = stylesheet_link_tag "vendor/foundation.css", "application.css"
+    = stylesheet_link_tag "vendor/foundation.css", "application.css", "vendor/jquery.neosmart.fb.wall.css"
+    = javascript_include_tag "vendor/jquery-1.9.1.min.js", "vendor/jquery.neosmart.fb.wall.js"
+    %link{href: 'http://fonts.googleapis.com/css?family=Condiment|Days+One', rel: 'stylesheet', type: 'text/css'}
 
   %body
+    #global-header.container.margin-top-40.margin-bottom-20
+      %h1.text-center.negative-margin-bottom-15
+        = image_tag "/images/circle_headshot.png"
+        Dan Thorp
+      %nav
+        %ul
+          %li= link_to "Home", "/", class: "#{@action == 'home' ? 'current' : ''}"
+          %li= link_to "Reel", "/reel", class: "#{@action == 'reel' ? 'current' : ''}"
+          %li= link_to "Photos", "/photos", class: "#{@action == 'photos' ? 'current' : ''}"
+          %li.margin-right-0= link_to "Contact", "/contact", class: "#{@action == 'contact' ? 'current' : ''}"
+
     #main.container
       = yield
+
+    #global-footer
+      &nbsp;
