@@ -18,8 +18,8 @@
           Dan Thorp
       .show-on-mobile.hide-on-desktops
         %h1.text-center.negative-margin-bottom-35.padding-left-0
-          = image_tag "/images/circle_headshot.png"
-          Dan T.
+          .block.negative-margin-bottom-10= image_tag "/images/circle_headshot.png"
+          .block.margin-top-0 Dan T.
       %nav
         %ul
           %li= link_to "Home", "/", class: "#{@action == 'home' ? 'current' : ''}"
