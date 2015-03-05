@@ -7,8 +7,7 @@
       worked along side of many greats including SJ Smith, T. Newen, L. Smith,
       TL McKoy, and the list goes on.
 
-    %h1.section-header News
-    #fb-wall
+    %iframe{width: "459", height: "257", src: "https://www.youtube.com/embed/JA_27--bIRo", frameborder: "0", allowFullScreen: true}
 
   .six.columns
     .row.margin-bottom-20
@@ -20,14 +19,3 @@
     = image_tag "/images/foolforlove_cropped.png", alt: "Headshot", class: "margin-bottom-0 block"
     = image_tag "/images/skippy.png", alt: "Headshot", class: "margin-bottom-0 block"
     = link_to "more photos", "/photos", class: "photo-block"
-
-
-:javascript
-  $('#fb-wall').fbWall({
-    id: 'ActorDanThorp',
-    accessToken:'335584889886886|BiRZP46p9B9wWEv_zCrVlSVlIDg',
-    showGuestEntries:false,
-    showComments:false,
-    max:5,
-    timeConversion:12
-  });
